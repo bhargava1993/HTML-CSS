@@ -1,0 +1,21 @@
+.html
+
+what is html?
+
+Hypertext Markup language
+
+HyperText:
+    text that contains links
+
+Markup:
+    we use tags to mark content, so that brower will understand and display the content.
+
+Opening tags and closing tags
+<> </>
+
+self closing tag
+
+html5 
+
+2008
+which is introduced in 2014 - w3c
