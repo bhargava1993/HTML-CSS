@@ -1,4 +1,4 @@
-p {
+/* p {
     background-color: yellowgreen;
 }
 
@@ -12,4 +12,15 @@ div {
 
 div div {
     background-color: orange;
+} */
+div {
+    background-color: red;
+}
+
+div div {
+    background-color: green;
+}
+
+span {
+    background-color: chocolate;
 }
