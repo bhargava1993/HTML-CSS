@@ -1,0 +1,15 @@
+p {
+    background-color: yellowgreen;
+}
+
+span {
+    background-color: aqua;
+}
+
+div {
+    background-color: bisque;
+}
+
+div div {
+    background-color: orange;
+}
