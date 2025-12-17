@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./sampleCss.css">  --> <!--external styles -->
+
+
+    <style>
+        p {
+            background-color: blue;
+            /* < !-- Internal styles--> */
+            /* < !--It applies background color not the letters--> */
+        }
+
+        h1 {
+            color: blueviolet;
+            /* < !-- it applies only letter not background color--> */
+        }
+
+        h2 {
+            color: aqua;
+        }
+
+        div span {
+            background-color: orangered;
+            /* < !--discendent selectors--> */
+        }
+
+        div>div>div>h3 {
+            background-color: brown;
+            /* <!--Child selectors-->             */
+        }
+
+        .room {
+            background-color: seagreen;
+            /* <!-- Class selectors--> */
+        }
+
+        #book {
+            background-color: darkkhaki;
+        }
+
+
+
+        input[type="text"] {
+            background-color: sienna;
+            /* <!-- Attribute selectors--> */
+        }
+
+        input[type="password"] {
+            background-color: palevioletred;
+        }
+
+        input[type="password"]:hover {
+            /*<!--This is pseudo selectors -->*/
+            background-color: red;
+        }
+
+        input[type="file"]:active {
+            background-color: chartreuse;
+        }
+
+        input[type="text"]:focus {
+            background-color: green;
+            /* <!-- Attribute selectors--> */
+        }
+
+        input[type="number"]:active {
+            background-color: darkcyan;
+
+        }
+
+
+
+        button {
+            background-color: yellow;
+        }
+
+        button:hover {
+            background-color: hotpink;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, tempora accusamus quos sequi obcaecati earum
+        numquam deleniti, excepturi aspernatur sit enim accusantium odio ducimus fugiat repellendus esse inventore
+        consequatur? Iure asperiores aliquam dolorum commodi fuga dicta suscipit vero veritatis, iusto, esse culpa nemo
+        ratione unde totam libero repellendus reprehenderit eveniet explicabo accusamus et tenetur eos perspiciatis
+        fugit! Maiores enim quae aperiam asperiores. Reiciendis nisi eum qui. Quos quae nihil libero modi velit numquam
+        asperiores nisi nemo odio doloremque fugit quaerat eum recusandae eligendi voluptate reprehenderit rem, officiis
+        itaque, totam laboriosam veritatis ipsa possimus quia iste. Quae suscipit accusantium rem! Explicabo.
+    </p>
+
+    <div>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, culpa.</h2>
+    </div>
+
+    <div>
+        <span>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quisquam amet voluptatem delectus quia,
+            numquam explicabo maxime tenetur dicta laborum.
+        </span>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id nam officia sint unde molestiae
+                rerum illo pariatur praesentium quia.</p>
+        </div>
+    </div>
+
+
+    <div>
+        <p style="background-color: darkmagenta;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae,
+            reprehenderit?</p> <!-- This is inline styles-->
+
+        <div>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, natus!</h1>
+            <div>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, fuga!</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="room">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, saepe deleniti incidunt voluptas modi
+        tempore in culpa ratione unde magnam earum a commodi adipisci exercitationem? Dignissimos nisi accusamus eaque
+        doloribus facilis rerum. Vitae non nam harum itaque in nihil modi laudantium magni, dolorem ab earum incidunt
+        cum, quaerat cumque ipsa omnis, ad consequatur odio assumenda voluptate. Neque eveniet autem ipsum reprehenderit
+        deserunt laborum adipisci, quasi perspiciatis veritatis ut minima libero quam necessitatibus cum repellat nisi
+        totam dolores consequatur! Harum quasi quod voluptatem iusto. Velit culpa esse, mollitia soluta accusamus quam.
+        Quas, reiciendis dicta eum beatae ex eos molestias nisi cupiditate.
+
+    </div>
+
+
+    <div id="book">
+        <span>
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto repellat enim aliquam
+                veritatis
+                totam. Magnam, doloremque perferendis. Ipsam non sit ipsum tempore libero laudantium, doloribus quas,
+                assumenda sapiente, fugit laborum magni reiciendis iusto repellat accusamus quos ducimus harum facere
+                quasi?</h4>
+        </span>
+    </div>
+
+
+    <div>
+        <input type="text" value="Venukumar" placeholder="Enter Name">
+        <br>
+        <br>
+
+        <input type="number" value="1289137" placeholder="Enter Ph.num">
+        <br>
+        <br>
+        <input type="text" placeholder="Enter Name">
+
+        <br>
+        <br>
+        <input type="radio" value="games">Cricket
+        <br>
+        <br>
+        <label>Password </label>
+        <input type="password">
+        <br>
+        <br>
+        <input type="file" placeholder="Enter a file">
+
+
+
+
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </div>
+
+
+</body>
+
+</html>

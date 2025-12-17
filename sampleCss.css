@@ -14,10 +14,10 @@ div div {
     background-color: orange;
 } */
 div {
-    background-color: red;
+    background-color: yellow;
 }
 
-div div {
+div div p {
     background-color: green;
 }
 
