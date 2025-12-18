@@ -1,0 +1,88 @@
+p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+
+| Property       | Description         | Example                              |
+| -------------- | ------------------- | ------------------------------------ |
+| `font-family`  | Font type           | `font-family: 'Roboto', sans-serif;` |
+| `font-size`    | Size of text        | `font-size: 18px;`                   |
+| `font-weight`  | Thickness           | `font-weight: 400;` / `bold`         |
+| `font-style`   | Normal or italic    | `font-style: italic;`                |
+| `font-variant` | Small caps          | `font-variant: small-caps;`          |
+| `line-height`  | Space between lines | `line-height: 1.6;`                  |
+
+
+h1 {
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+
+
+| Property          | Description           | Example                   |
+| ----------------- | --------------------- | ------------------------- |
+| `color`           | Text color            | `color: red;`             |
+| `text-align`      | Alignment             | `center`, `left`, `right` |
+| `text-transform`  | Case change           | `uppercase`, `lowercase`  |
+| `text-decoration` | Underline, none       | `underline`, `none`       |
+| `letter-spacing`  | Space between letters | `2px`                     |
+| `word-spacing`    | Space between words   | `5px`                     |
+| `text-shadow`     | Shadow effect         | `2px 2px 5px gray`        |
+| `white-space`     | Text wrapping         | `nowrap`                  |
+
+
+img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+| Property        | Description       | Example               |
+| --------------- | ----------------- | --------------------- |
+| `width`         | Image width       | `width: 300px;`       |
+| `height`        | Image height      | `height: auto;`       |
+| `max-width`     | Responsive images | `max-width: 100%;`    |
+| `border-radius` | Rounded corners   | `border-radius: 50%;` |
+| `object-fit`    | Fit inside box    | `cover`, `contain`    |
+| `opacity`       | Transparency      | `opacity: 0.7;`       |
+| `box-shadow`    | Shadow            | `0 4px 8px gray;`     |
+
+div {
+  background-image: url("image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+| Property              | Description        |
+| --------------------- | ------------------ |
+| `background-image`    | Set image          |
+| `background-size`     | `cover`, `contain` |
+| `background-position` | `center`, `top`    |
+| `background-repeat`   | `no-repeat`        |
+
+.card {
+  width: 300px;
+  padding: 20px;
+  font-family: Arial;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
