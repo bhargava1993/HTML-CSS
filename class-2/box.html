@@ -4,22 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>My Website</title>
+
+    <link rel="icon" href="../assets/bird.jpg">
+
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        .box {
-            width: 150px;
-            height: 150px;
-            background-color: blueviolet;
-            margin: 40px auto;
-            /* float: left; */
-            border: 2px solid black;
-            margin-top: 100px;
         }
 
         .gift-card {
@@ -30,40 +25,87 @@
             background-color: #f6fff6;
         }
 
-        /* .box2 {
+        /* .box {
+            width: 150px;
+            height: 150px;
+            background-color: blueviolet;
+            margin: 40px auto;
+            float: left;
+            border: 2px solid black;
+            margin-top: 100px;
+        }
+
+
+
+        .box2 {
             width: 150px;
             height: 150px;
             background-color: red;
             float: left;
-        } */
+        }
 
-        /* .box3 {
+        .box3 {
             width: 150px;
             height: 150px;
             background-color: greenyellow;
             margin-top: 20px;
-
+            float: left;
         }
 
         .box4 {
             width: 150px;
             height: 150px;
             background-color: purple;
-           
+            float: left;
         } */
+        .container {
+            width: 340px;
+            /* 150 + 150 + margins */
+            margin: 0 auto;
+        }
+
+        .box,
+        .box2,
+        .box3,
+        .box4 {
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        .box {
+            background-color: blueviolet;
+        }
+
+        .box2 {
+            background-color: red;
+        }
+
+        .box3 {
+            background-color: greenyellow;
+        }
+
+        .box4 {
+            background-color: purple;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="gift-card">
+    <!-- <div class="gift-card">
         <h3>₹500 Gift Card</h3>
         <p>Use this card on your next purchase</p>
+    </div> -->
+    <div class="container">
+        <div class="box">bhargava house</div>
+        <div class="box2">venu house</div>
+        <div class="box3">sudheer house</div>
+        <div class="box4">gothami house</div>
     </div>
-    <!-- <div class="box">bhargava house</div> -->
-    <!-- <div class="box2">venu house</div> -->
-    <!-- <div class="box3">sudheer house</div>
-    <div class="box4">gothami house</div> -->
+
 </body>
 
 </html>
