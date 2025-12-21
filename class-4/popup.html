@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Popup</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Hide checkbox */
+        #popup-toggle {
+            display: none;
+        }
+
+        /* Open button */
+        .open-btn {
+            padding: 10px 20px;
+            background: blue;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Popup background */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Show popup when checkbox is checked */
+        #popup-toggle:checked~.popup {
+            display: block;
+        }
+
+        /* Popup box */
+        .popup-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Close button */
+        .close-btn {
+            position: absolute;
+            top: 8px;
+            right: 12px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Button -->
+    <label for="popup-toggle" class="open-btn">Open Popup</label>
+
+    <!-- Hidden checkbox -->
+    <input type="checkbox" id="popup-toggle">
+
+    <!-- Popup -->
+    <div class="popup">
+        <div class="popup-box">
+            <label for="popup-toggle" class="close-btn">&times;</label>
+            <h2>Popup Title</h2>
+            <p>This popup is made using plain HTML and CSS.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
