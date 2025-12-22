@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position:relative;
+            width: 1300px;
+            height: 550px;
+            border: 2px solid black;
+
+        }
+        .box{
+            display: inline-block;
+            margin: auto;
+        }
+        .static{
+            position:static ;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            top: 20px;
+            
+        }
+        .relative{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color:red;
+            top: 50px;
+            left: 75px;
+            
+
+        }
+        .absolute{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color:brown;
+            /* left: 0px; */
+            right: 0px;
+
+        }
+        .fixed{
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            left: 500px;
+        }
+        .sticky{
+            position: sticky;
+            width: 100px;
+            height: 100px;
+            background-color:yellow;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box static"> STATIC</div>
+        <div class="box relative">RELATIVE</div>
+        <div class="box absolute">ABSOLUTE</div>
+        <div class="box fixed">FIXED</div>
+        <div class="box sticky">STICKY</div>
+    </div>
+    <div class="box fixed">FIXED</div>
+</body>
+</html>
