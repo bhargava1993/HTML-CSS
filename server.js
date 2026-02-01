@@ -72,35 +72,68 @@
 
 
 
+// let express = require("express");
+
+// let app = express();
+
+// let PORT = 3000;
+
+
+
+// function login(req,res,next){
+//     console.log(req.query)
+
+//     if(req.query.email=== "venu@gmail.com" && req.query.password==="12345"){
+//         next()
+//     }else{
+//         return res.status(404).send({
+//             message : "Access denied"
+//         })
+//     }
+//     next();
+
+// }
+
+
+// app.get("/login",login,(req,res)=>{
+//     console.log(req.query)
+//     res.send("The user has logged in")
+// })
+
+
+// app.listen(PORT,()=>{
+//     console.log("Server is runnig on PORT 3000");
+// })
+
+
 let express = require("express");
 
 let app = express();
 
 let PORT = 3000;
 
+app.use(express.json());
 
-
-function login(req,res,next){
-    console.log(req.query)
-
-    if(req.query.email=== "venu@gmail.com" && req.query.password==="12345"){
-        next()
+function login (req,res,next){
+    console.log(req.body);
+    if(req.body.email === "venu@gmail.com" && req.body.password === "12345"){
+        // console.log("User Successfully logge in ")
+        next();
     }else{
-        return res.status(404).send({
-            message : "Access denied"
-        })
+        return res.status(404).send("Access denied")
     }
     next();
-
-}
-
+} 
 
 app.get("/login",login,(req,res)=>{
-    console.log(req.query)
-    res.send("The user has logge in")
+    console.log(req.body)
+    res.send("User is Successfully log in")
 })
 
 
+
+
+
 app.listen(PORT,()=>{
-    console.log("Server is runnig on PORT 3000");
+    console.log(`Server is running on ${PORT}`)
 })
